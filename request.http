@@ -1,0 +1,28 @@
+### GET all users
+GET http://localhost:5111/users
+Accept: application/json
+
+### GET user by ID
+GET http://localhost:5111/users/1
+Accept: application/json
+
+### POST new user
+POST http://localhost:5111/users
+Content-Type: application/json
+
+{
+  "name": "Charlie",
+  "email": "charlie@example.com"
+}
+
+### PUT update user
+PUT http://localhost:5111/users/1
+Content-Type: application/json
+
+{
+  "name": "Alice Updated",
+  "email": "alice.updated@example.com"
+}
+
+### DELETE user by ID
+DELETE http://localhost:5111/users/5
